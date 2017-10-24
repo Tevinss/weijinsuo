@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>媒体查询</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 2000px;
+            background: #ff6400;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /*因为css的层叠性，所以从低宽度开始判断*/
+        @media (min-width: 768px) and (max-width: 992px) {
+            /*媒体查询，只有当条件(min-width: 768px)满足时才会执行*/
+            .container {
+                width: 750px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            /*媒体查询，只有当条件(min-width: 768px)满足时才会执行*/
+            .container {
+                width: 970px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            /*媒体查询，只有当条件(min-width: 768px)满足时才会执行*/
+            .container {
+                width: 1170px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container"></div>
+</body>
+</html>
